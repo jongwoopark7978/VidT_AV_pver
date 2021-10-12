@@ -10,7 +10,7 @@ We leveraged the recently released large-scale Waymo Open Dataset. We used only 
 
 ```bash
 
-#testing
+#testing with tiny scale
 python3 train.py --cuda 3 --batch_size 20 --epochs 2 --lr 0.00007 --gamma 0.7 --seed  42 --num_frames  10 --num_dims  20 --num_layers  2 --num_heads  2 --dim_head  10 --mlp_dim  10 --drop_prob  0.4 --emb_drop_prob  0.4 --cls_dim  10
 
 #training
