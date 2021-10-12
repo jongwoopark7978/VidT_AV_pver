@@ -1,6 +1,6 @@
 # Pytorch Implementation of [Video Transformers for Autonomous Driving]
 
-## project report
+## Report
 [Video Transformers for Autonomous Driving](https://github.com/jongwoopark7978/VidT_AV_pver/blob/main/Video%20Transformers%20for%20Autonomous%20Driving_Jongwoo%20Park%2C%20Sounak%20Mondal.pdf)
 
 ## Data Preparation
