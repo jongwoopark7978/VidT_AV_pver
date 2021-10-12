@@ -4,7 +4,12 @@
 [Video Transformers for Autonomous Driving](https://github.com/jongwoopark7978/VidT_AV_pver/blob/main/Video%20Transformers%20for%20Autonomous%20Driving_Jongwoo%20Park%2C%20Sounak%20Mondal.pdf)
 
 ## Data Preparation
-We leveraged the recently released large-scale Waymo Open Dataset. We used only the front images of 13 training tars (32.5GB) and 3 validation tars (7.5GB) to analyze the potential of our model.
+
+#### Video data
+We leveraged the recently released large-scale Waymo Open Dataset. We used only the front images of 13 training tars (32.5GB) and 3 validation tars (7.5GB) to analyze the potential of our model. 
+
+#### Transformation of velocity from global to vehicle coordinate
+The velocity of AV is provided in a global coordinate system. We need to transform the velocity data into a vehicle coordinate system so that we can calculate the acceleration in a vehicle coordinate system. The Waymo dataset provides a vehicle pose that transforms variables from vehicle to global coordinate. We can calculate a vehicle pose that transforms the variables from global to vehicle coordinate by taking a matrix inversion of vehicle pose.
 
 ## Training and Testing
 
